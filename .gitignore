@@ -2,4 +2,3 @@
 __pycache__/
 *.pyc
 *.pyo
-homa_db.sqlite3
