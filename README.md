@@ -35,7 +35,8 @@ The setup script creates a `.venv/` virtual environment, installs the `mcp` pack
 
 ```
 homa-analyst/
-├── homa_db.sqlite3   ← must be here
+├── homa_db.sqlite3   ← must be here (extract from zip first)
+├── homa_db.sqlite3.zip
 ├── CLAUDE.md
 ├── .mcp.json
 ├── setup.sh / setup.bat
@@ -44,7 +45,18 @@ homa-analyst/
     └── requirements.txt
 ```
 
-If `homa_db.sqlite3` is missing, place it in this folder before proceeding.
+The database is distributed as `homa_db.sqlite3.zip` because the uncompressed file exceeds **100 MB** and cannot be tracked directly in Git.  
+**Before proceeding, extract it:**
+
+```bash
+# macOS / Linux
+unzip homa_db.sqlite3.zip
+
+# Windows (PowerShell)
+Expand-Archive homa_db.sqlite3.zip .
+```
+
+If `homa_db.sqlite3` is still missing after extracting, copy it manually into the `homa-analyst/` folder.
 
 ### Open the project in Claude Code
 

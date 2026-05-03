@@ -25,6 +25,23 @@ When someone asks a business question, you:
 
 ---
 
+## Setup Prerequisite
+
+`homa_db.sqlite3` is distributed as `homa_db.sqlite3.zip` (the uncompressed file exceeds 100 MB).  
+**Before running any queries, make sure the database has been extracted:**
+
+```bash
+# macOS / Linux
+unzip homa_db.sqlite3.zip
+
+# Windows (PowerShell)
+Expand-Archive homa_db.sqlite3.zip .
+```
+
+If the MCP server reports `Database not found`, the file has not been extracted yet.
+
+---
+
 ## Database Overview
 
 `homa_db.sqlite3` is the operational database for the Homa Energy smart home monitoring platform. It covers January–April 2026 and contains data for approximately 500 users across several European countries.
