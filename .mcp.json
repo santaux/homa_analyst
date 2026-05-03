@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "homa-energy": {
+      "command": ".venv/bin/python3",
+      "args": ["mcp/server.py"]
+    }
+  }
+}
