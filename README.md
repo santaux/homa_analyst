@@ -105,18 +105,18 @@ Only `SELECT` and `WITH …` queries are permitted. Any attempt to modify data i
 
 | Table | Rows (approx.) | Description |
 |-------|---------------|-------------|
-| `users` | 50 | App users |
-| `homes` | 50 | Monitored premises |
-| `devices` | 50 | Smart meter hardware |
-| `energy_prices` | ~20 | Reference tariffs by country |
-| `energy_readings` | ~115,000 | Hourly consumption (core fact table) |
-| `daily_stats` | ~6,000 | Pre-aggregated daily totals |
-| `weekly_stats` | ~700 | Pre-aggregated weekly totals |
-| `monthly_stats` | ~200 | Pre-aggregated monthly totals |
-| `projections` | ~6,000 | End-of-day forecasts |
-| `user_sessions` | ~18,000 | App usage sessions |
-| `support_conversations` | ~60 | Support tickets |
-| `support_messages` | ~350 | Messages within tickets |
+| `users` | 500 | App users |
+| `homes` | 500 | Monitored premises |
+| `devices` | 500 | Smart meter hardware |
+| `energy_prices` | ~10 | Reference tariffs by country |
+| `energy_readings` | ~833,000 | Hourly consumption (core fact table) |
+| `daily_stats` | ~34,700 | Pre-aggregated daily totals |
+| `weekly_stats` | ~5,400 | Pre-aggregated weekly totals |
+| `monthly_stats` | ~1,400 | Pre-aggregated monthly totals |
+| `projections` | ~34,700 | End-of-day forecasts |
+| `user_sessions` | ~92,900 | App usage sessions |
+| `support_conversations` | ~215 | Support tickets |
+| `support_messages` | ~1,100 | Messages within tickets |
 
 Data covers **January 1 – April 30, 2026**.
 

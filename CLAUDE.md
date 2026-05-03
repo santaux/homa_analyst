@@ -27,14 +27,14 @@ When someone asks a business question, you:
 
 ## Database Overview
 
-`homa_db.sqlite3` is the operational database for the Homa Energy smart home monitoring platform. It covers January–April 2026 and contains data for approximately 50 users across several European countries.
+`homa_db.sqlite3` is the operational database for the Homa Energy smart home monitoring platform. It covers January–April 2026 and contains data for approximately 500 users across several European countries.
 
 ### What's in the data
 
 - **Users** in NL, DE, BE, FR, SE, DK — mix of free and Premium subscribers
 - **Homes** with property attributes (type, size, residents, solar panels)
 - **Devices** — Homa Tracker v1, v2, and Pro models with individual tariff configuration
-- **Energy readings** at 1-hour granularity (~115,000 rows)
+- **Energy readings** at 1-hour granularity (~833,000 rows)
 - **Pre-aggregated stats** at daily, weekly, and monthly level
 - **End-of-day projections** with confidence intervals
 - **App sessions** across iOS, Android, and web
