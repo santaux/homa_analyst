@@ -3,6 +3,7 @@ Homa Energy — MCP Analyst Server
 Read-only SQLite access with embedded business schema context.
 """
 
+import os
 import re
 import sqlite3
 from pathlib import Path
@@ -11,7 +12,11 @@ from mcp.server.fastmcp import FastMCP
 
 DB_PATH = Path(__file__).parent.parent / "homa_db.sqlite3"
 
-mcp = FastMCP("Homa Energy Analyst")
+mcp = FastMCP(
+    "Homa Energy Analyst",
+    host=os.environ.get("MCP_HOST", "127.0.0.1"),
+    port=int(os.environ.get("MCP_PORT", "8001")),
+)
 
 # ── Business schema metadata ─────────────────────────────────────────────────
 
@@ -348,4 +353,4 @@ def execute_query(query: str) -> dict:
 
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport=os.environ.get("MCP_TRANSPORT", "stdio"))
